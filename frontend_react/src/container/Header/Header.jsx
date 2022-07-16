@@ -1,8 +1,12 @@
 import React from 'react'
-import './Header.css'
+import './Header.scss'
+import { images } from '../../constants'
 
-export const Header = () => {
+const Header = () => {
   return (
-    <div>Header</div>
+    <div>Header
+    </div>
   )
 }
+
+export default Header

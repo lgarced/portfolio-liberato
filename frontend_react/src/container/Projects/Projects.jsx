@@ -1,8 +1,10 @@
 import React from 'react'
 import './Projects.scss';
 
-export const Projects = () => {
+const Projects = () => {
   return (
     <div>Projects</div>
   )
 }
+
+export default Projects
