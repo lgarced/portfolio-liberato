@@ -1,7 +1,10 @@
 .app_navbar {
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 1rem 2rem;
     background-color: rgba(132, 157, 191, 0.25);
     backdrop-filter: blur(4px);
@@ -19,6 +22,104 @@
     img {
         width: 100px;
         height: 100px;
+        border-radius: 10px;
+
+        @media screen and  (min-width: 2000px) {
+            width: 200px;
+            height: 200px;
+        }
     }
+}
+
+
+.app_navbar_links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+
+   li {
+    margin: 0 1rem;
+    cursor: pointer;
+    
+    flex-direction: column;
+    background: transparent;
+    border-radius: 50%;
+
+    margin-bottom: 5px;
+    
+    div {
+        width: 5px;
+        height: 5px;
+        background: transparent;
+        border-radius: 50%;
+
+        margin-bottom: 5px;
+    }
+
+    a {
+        color: var(--gray-color);
+        text-decoration: none;
+        flex-direction: column;
+        
+        text-transform: uppercase;
+        font-weight: 500;
+        
+        transition: all 0.3s ease-in-out;
+        
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+
+    &:hover {
+        div {
+            background-color: var(--secondary-color);
+        }
+    }
+ }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+
+        .app_navbar-menu {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--secondary-color);
+
+            svg {
+                width: 70%;
+                height: 70%;
+                color: var(--white-color);
+            }
+
+            div {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 5;
+
+                padding: 1rem;
+
+                width: 80%;
+                height: 100vh;
+
+                display: flex; 
+                justify-content: flex-end;
+                align-items: flex-end;
+                flex-direction: column;
+            }
+        }
+    }
+
 }
 
