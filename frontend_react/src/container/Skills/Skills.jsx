@@ -4,7 +4,7 @@ import ReactTooltip from 'react-tooltip';
 import { images } from '../../constants';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
-import skillsData from '../skills_data';
+import skillsData from '../../skills_data';
 import './Skills.scss';
 
 const Skills = () => {
