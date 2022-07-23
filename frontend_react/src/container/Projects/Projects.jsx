@@ -38,10 +38,13 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
-
+      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>  
+      <p> As a Data Engineer, I have worked with multiple teams to develop and deliver clean data for analytics and <br></br> 
+        I have worked with a wide range of data sources and data formats, including  JSON, CSV, XML, and SQL.<br></br> 
+        
+      </p>
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['Al Dente', 'Voyage Advisor', 'Tiempo', 'Conversar', 'Others'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}

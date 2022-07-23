@@ -8,11 +8,11 @@ import { images } from '../../constants'
  const Navbar = () => {
      const [toogle, setToggle] = useState(false);
   return (
-   <nav className="app_navbar">
-    <div className="app_navbar_logo">
+   <nav className="app__navbar">
+    <div className="app__navbar_logo">
       <img src={images.Liberato_Garced} alt="Logo Liberato's website" />
         </div>
-      <ul className="app_navbar_links">
+      <ul className="app__navbar_links">
         {['Home','About', 'Projects', 'Skills', 'Contact'].map( (item) => (
           <li className="app_flex p-text" key={`link-${item}`}> 
             <div  />
@@ -20,7 +20,7 @@ import { images } from '../../constants'
           </li>
         ))}
       </ul>
-      <div className="app_navbar-menu">
+      <div className="app__navbar-menu">
            <HiMenuAlt4 onClick ={ () => setToggle(true) }/>
           {
             toogle &&  (

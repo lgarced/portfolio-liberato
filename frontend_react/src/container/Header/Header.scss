@@ -21,7 +21,7 @@
     height: 100%;
     flex-direction: row;
 
-    padding: 6rem 2rem 0rem;
+    padding: 10rem 2rem 0rem;
 
     @media screen and (min-width: 2000px) {
         padding-top: 8rem;
@@ -178,11 +178,11 @@
     position: relative;
 
     img {
-        width: 40px;
+        width: 675px;
         height: auto;
         object-fit: cover;
         margin: auto;
-        border-radius: 50%;
+        border-radius: 10%;
 
     }
 
@@ -203,8 +203,7 @@
 
 .img-header {
         width: 100%;
-        height: 60%;
-        border-radius: 22%;
+        height: 100%;
         justify-content: flex-end;
         align-items: flex-end;
 }
