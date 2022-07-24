@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
+import { images } from '../../constants';
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -19,8 +20,9 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">I am a Data Engineer <span>with more than 3 years of experience</span>
-       <br />Also a Software Engineer <span>after UCI Irvine Bootcamp course</span></h2>
-
+       <br />A software Engineer certified by University of California Irvine. <span> University of California Irvine.</span></h2>
+       <h3><br /> <span>  I like to work hard, learn as much as I can, but also have as much fun as possible. The picture below was of my trip through China.</span></h3>
+      <img src={images.mechina} alt="About" />
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
@@ -30,7 +32,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
+            <img src={images.mechina} alt="Liberato in China with the Yao People around laughing" />
             <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
             <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>

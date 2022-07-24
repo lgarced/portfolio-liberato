@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import './Navbar.scss'
 import{ HiMenuAlt4, HiX} from 'react-icons/hi';
 import { motion } from 'framer-motion'
-
 import { images } from '../../constants'
+
 
  const Navbar = () => {
      const [toogle, setToggle] = useState(false);
