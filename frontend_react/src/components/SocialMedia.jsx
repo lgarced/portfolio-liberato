@@ -5,7 +5,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-      <BsGithub />
+      <BsGithub href='https://github.com/lgarced' />
     </div>
     <div>
       <BsLinkedin />

@@ -17,6 +17,10 @@ import javascript from "../assets/javascript.png";
 import git from "../assets/git.png";
 import figma from "../assets/figma.png";
 import flutter from "../assets/flutter.png";
+import ssrs from "../assets/ssrs.jpeg";
+import ps from "../assets/ps.webp";
+import sqlserver from "../assets/sqlserver.jpg";
+import azure from "../assets/azure.jpg";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -45,7 +49,9 @@ export default {
     mobile,
     api,
     figma,
-    flutter
-
-
+    flutter,
+    ssrs,
+    ps,
+    sqlserver,
+    azure,
 }

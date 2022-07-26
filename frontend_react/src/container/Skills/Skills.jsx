@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import ReactTooltip from 'react-tooltip';
 import { images } from '../../constants';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import skillsData from '../../skills_data';
+import experiencesData from '../../experiences';
 import './Skills.scss';
 
 const Skills = () => {
-  const [experiences, setExperiences] = useState([]);
-  const [skills, setSkills] = useState(skillsData);
+  const [experiences] = useState(experiencesData);
+  const [skills] = useState(skillsData);
 
   // useEffect(() => {
   //   const query = '*[_type == "experiences"]';
@@ -57,7 +58,7 @@ const Skills = () => {
                 <p className="bold-text">{experience.year}</p>
               </div>
               <motion.div className="app__skills-exp-works">
-                {experience.works.map((work) => (
+                {experiences.works.map((work) => (
                   <>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
