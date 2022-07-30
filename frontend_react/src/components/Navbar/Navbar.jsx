@@ -4,6 +4,7 @@ import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 import { images } from "../../constants";
 
+
 const Navbar = () => {
   const [toogle, setToggle] = useState(false);
   return (
@@ -12,7 +13,7 @@ const Navbar = () => {
         <img src={images.Liberato_Garced} alt="Logo Liberato's website" />
       </div>
       <ul className="app__navbar_links">
-        {["Home", "About", "Projects", "Skills", "Contact"].map((item) => (
+        {["home", "about", "skills", "projects", "contact"].map((item) => (
           <li className="app_flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}> {item} </a>
@@ -32,17 +33,16 @@ const Navbar = () => {
           {toogle && (
             <>
               <motion.div
-                style={{position:"absolute"}}
+                style={{ position: "absolute" }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 0.6 } }}
                 exit={{ opacity: 0 }}
               >
-                {["HOME", "ABOUT", "PROJECTS", "SKILLS", "CONTACT"].map(
+                {["home", "about", "skills", "projects", "contact"].map(
                   (item) => (
                     <li key={`link-${item}`}>
-                      <a href={`#${item}`} onClick={() => setToggle(false)}>
-                        {" "}
-                        {item}{" "}
+                      <a href={`#${item}`} onClick={() => setToggle(true)}>
+                        {item}
                       </a>
                     </li>
                   )
