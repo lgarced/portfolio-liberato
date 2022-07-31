@@ -6,6 +6,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Projects.scss';
 import  filter_Work  from '../../filterWork';
+import { images } from '../../constants';
 
 const Work = () => {
   const [works, setWorks] = useState([]);
@@ -40,8 +41,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portfolio</span>{" "}
-        Section
+        My Creative <span>Portfolio</span> Section
       </h2>
       <p>
         {" "}
@@ -74,7 +74,7 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              {/* <img src={urlFor(work.imgUrl)} alt={work.name} /> */}
+              <img src={images[work.iconUrl]} alt={work.name} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}

@@ -33,18 +33,29 @@ const About = () => {
           People in Guangxi were welcoming and warm to me.
         </span>
       </h3>
-      <div className="app__profiles">    
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{
-              scale: 1.2,
-              transition: { duration: 1 },
-            }}
-            transition={{ duration: 0.5, type: "tween" }}
-            className="app__profile-item"
-          >
-            <img src={images.mechina} alt="About" />
-          </motion.div>
+      <div className="app__profiles">
+        <motion.div
+          // whileInView={{ opacity: 1 }}
+          // whileHover={{
+          //   scale: 0.75,
+          //   transition: { duration: 0.15 },
+          // }}
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 180, 180, 0],
+            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: 1,
+            repeatDelay: 1,
+          }}
+          className="app__profile-item"
+        >
+          <img src={images.mechina} alt="About" />
+        </motion.div>
       </div>
     </>
   );

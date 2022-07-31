@@ -36,6 +36,9 @@ const Skills = () => {
               whileHover={{ scale: 1.2 }}
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
+              animate={{
+                y: ["100%", "-10%"],
+              }}
               className="app__skills-item app__flex"
               key={skill.name}
             >

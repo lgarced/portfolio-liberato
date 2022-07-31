@@ -22,6 +22,8 @@ import ps from "../assets/ps.webp";
 import sqlserver from "../assets/sqlserver.jpg";
 import azure from "../assets/azure.jpg";
 
+import aldente from "../assets/aldente.jpg";
+import tiempo from "../assets/tiempo.jpg";
 
 export default {
     mechina,
@@ -46,4 +48,6 @@ export default {
     ps,
     sqlserver,
     azure,
+    aldente, 
+    tiempo,
 }

@@ -1,16 +1,16 @@
 const filterWork = [
   {
-    // imgUrl: "placeholder.jpg",
+    imgUrl: "aldente",
     name: "Al Dente",
-    projectLink: "https://keeezy.github.io/Project-One/",
+    projectLink: "https://lgarced.github.io/Project-One/",
     codeLink: "https://github.com/lgarced/Project-One",
-    title: "Recipes that fit your igredients",
+    title: "Recipes for your igredients",
     description:
       "Al Dente is a recipe website that allows users to search for recipes that fit their ingredients. The website is built with React, Redux, and Node.js. The website is hosted on Heroku.",
-    tags: ["React", "Redux", "Node.js", "Heroku"],
+    tags: ["Redux", "Node.js", "Heroku"],
   },
   {
-    // imgUrl: "placeholder.jpg",
+    imgUrl: "tiempo",
     name: "Tiempo",
     projectLink: "https://lgarced.github.io/Tiempo/",
     codeLink: "https://github.com/lgarced/Tiempo",

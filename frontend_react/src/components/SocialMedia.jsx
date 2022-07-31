@@ -1,19 +1,22 @@
 import React from 'react';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
-
+import { BsGithub, BsLinkedin,BsFileEarmarkPdf } from 'react-icons/bs';
 
 const SocialMedia = () => (
   <div className="app__social">
     <div>
-     <a href='https://github.com/lgarced'> <BsGithub />
-       </a>
-    </div>
-    <div>
-      <BsLinkedin />
+      <a href="https://github.com/lgarced">
+        {" "}
+        <BsGithub />
+      </a>
     </div>
     {/* <div>
-      <BsInstagram />
+      <BsLinkedin />
     </div> */}
+    <a target = '_blank' href="resume.PDF">
+      <div>
+        <BsFileEarmarkPdf />{" "}
+      </div>
+    </a>
   </div>
 );
 
