@@ -39,19 +39,32 @@ const Header = () => (
       </div>
     </motion.div>
 
-    <motion.div
-      whileInView={{ opacity: [0, 1] }}
-      whileHover={{
-        scale: 1.2,
-        transition: { duration: 1 },
-      }}
-      transition={{ duration: 0.5, delayChildren: 0.5 }}
+    <div
+      // whileInView={{ opacity: [0, 1] }}
+      // whileHover={{
+      //   scale: 1.03,
+      //   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)",
+      //   transition: { duration: 0.15 },
+      // }}
+      // transition={{ duration: 0.15 }}
       className="app__header-img"
     >
-      <img src={images.me} alt="Photo of Liberato" />
-    </motion.div>
+      <motion.img
+        transition={{ duration: 0.15 }}
+        whileInView={{ opacity: [0, 1] }}
+        whileHover={{
+          scale: 1.03,
+          boxShadow:
+            "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+          transition: { duration: 0.2 },
+        }}
+        src={images.me}
+        alt="Photo of Liberato"
+      />
+    </div>
     <motion.div
       variants={scaleVariants}
+      transition={{ duration: 0.15 }}
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >

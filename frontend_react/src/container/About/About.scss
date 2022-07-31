@@ -4,7 +4,8 @@
     width: 100%;
     flex-direction: column;
     background-color: rgb(113, 145, 145);
-    border-radius: 11%;
+    border-radius: 3rem;
+    padding: 2rem;
 }
 
 .app__profiles {
@@ -12,31 +13,32 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding: 2rem;
     margin-top: 2rem;
 }
 
 .app__profile-item {
-    width: 190px;
+    width: 30rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: column;
+    // flex-direction: column;
     margin: 2rem;
     padding-top: 5rem;
 
     img {
-        width: 100%;
+        width: 30rem;
         height: 155px;
-        border-radius: 25%;
+        border-radius: 3rem;
         object-fit: cover;
     }
 
     @media screen and (min-width: 2000px) {
-        width: 370px;
+        width: 40rem;
         margin: 2rem 4rem;
 
         img {
-            height: 320px;
+            height: 30rem;
         }
     }
 }

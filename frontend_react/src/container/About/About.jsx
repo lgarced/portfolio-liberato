@@ -29,14 +29,11 @@ const About = () => {
         <span>
           {" "}
           I like to work hard, learn as much as I can, but also have as much fun
-          as possible. The picture below was of my trip through China. 
-          The Yao People in Guangxi were 
-          welcoming and warm to me.
+          as possible. The picture below was of my trip through China. The Yao
+          People in Guangxi were welcoming and warm to me.
         </span>
       </h3>
-      <img src={images.mechina} alt="About" />
-      <div className="app__profiles">
-        {abouts.map((about, index) => (
+      <div className="app__profiles">    
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{
@@ -45,20 +42,9 @@ const About = () => {
             }}
             transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
-            key={about.title + index}
           >
-            <img
-              src={images.mechina}
-              alt="Liberato in China with the Yao People around laughing"
-            />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
-            </p>
+            <img src={images.mechina} alt="About" />
           </motion.div>
-        ))}
       </div>
     </>
   );

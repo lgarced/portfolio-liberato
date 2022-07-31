@@ -22,10 +22,6 @@ import ps from "../assets/ps.webp";
 import sqlserver from "../assets/sqlserver.jpg";
 import azure from "../assets/azure.jpg";
 
-import about01 from "../assets/about01.png";
-import about02 from "../assets/about02.png";
-import about03 from "../assets/about03.png";
-import about04 from "../assets/about04.png";
 
 export default {
     mechina,
@@ -34,10 +30,6 @@ export default {
     me,
     email,
     circle,
-    about01,
-    about02,
-    about03,
-    about04,
     node,
     python,
     react,
